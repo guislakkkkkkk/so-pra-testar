@@ -21,7 +21,7 @@ import haxe.Exception;
 import flixel.tweens.FlxEase;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
-#if cpp
+#if MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
 #end
@@ -47,7 +47,8 @@ class Cache extends MusicBeatState
 		bitmapData = new Map<String,FlxGraphic>();
 		bitmapData2 = new Map<String,FlxGraphic>();
 
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('funkay'));
+		Paste this:
+		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('loadingScreens/loadingscreen-' + FlxG.random.int(1, 4)));
 		menuBG.screenCenter();
 		add(menuBG);
 
