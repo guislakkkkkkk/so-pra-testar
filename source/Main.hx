@@ -82,7 +82,7 @@ class Main extends Sprite
 		}
 
 		if !debug
-		iniTitleState = Cache;
+		iniTialState = Cache;
 		#end
 
 		ClientPrefs.loadDefaultKeys();
